@@ -27,7 +27,8 @@ function love.draw()
     escala, 
     escala, 
     (1/escala) * (largura / 2.0), 
-    (1/escala) * (altura / 2.0))
+    (1/escala) * (altura / 2.0)
+  )
 end
 
 function love.update(dt)
