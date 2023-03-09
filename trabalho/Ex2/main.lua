@@ -77,7 +77,7 @@ function love.draw()
     )
     -- Fim
 
-    -- Exercício 3    
+    -- Exercício 2.c    
     love.graphics.circle(
         'line', 
         850, 
@@ -97,7 +97,7 @@ function love.draw()
     )    
     -- Fim
 
-    -- Exercício 4
+    -- Exercício 2.d
     love.graphics.rectangle(
         'line',
         50, 350,
@@ -116,7 +116,7 @@ function love.draw()
     )
     -- Fim
 
-    -- Exercício 5
+    -- Exercício 2.e
     love.graphics.circle(
         'line',
         650,
@@ -136,6 +136,6 @@ function love.draw()
     )
     -- Fim
 
-    -- Exercício 6
+    -- Exercício 2.f
     -- Fim
 end
