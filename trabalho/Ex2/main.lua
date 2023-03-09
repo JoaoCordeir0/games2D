@@ -101,12 +101,30 @@ function love.draw()
     love.graphics.rectangle(
         'line',
         50, 350,
-        350, 300
+        300, 300
     )
     love.graphics.rectangle(
         'line',
-        175, 350,
+        150, 350,
         100, 50
     )
+    love.graphics.circle(
+        'line', 
+        200, 
+        500, 
+        50
+    )
+    -- Fim
+
+    -- Exercício 5
+    love.graphics.circle(
+        'line',
+        550,
+        500,
+        50
+    )
+    -- Fim
+
+    -- Exercício 6
     -- Fim
 end
