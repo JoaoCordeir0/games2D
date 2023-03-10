@@ -1,13 +1,13 @@
-screan = {} -- Informações da tela gráfica
+screean = {} -- Informações da tela gráfica
 circle = {}  -- Informações do ciruclo
 
 function love.load()   
-    screan.h = love.graphics.getWidth()
-    screan.v = love.graphics.getHeight()
+    screean.h = love.graphics.getWidth()
+    screean.v = love.graphics.getHeight()
     
-    circle.raio = screan.v / 2 
-    circle.y = (screan.v) / 2
-    circle.x = (screan.h) / 2   
+    circle.raio = screean.v / 2 
+    circle.y = (screean.v) / 2
+    circle.x = (screean.h) / 2   
 
     love.graphics.setBackgroundColor(1,0.88,0.88)    
 end

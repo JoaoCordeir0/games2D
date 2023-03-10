@@ -75,6 +75,18 @@ function love.draw()
         350, 100,
         500, 250
     )
+    love.graphics.line(
+        450, 50,
+        450, 100
+    )
+    love.graphics.line(
+        450, 100,
+        350, 150
+    )
+    love.graphics.line(
+        450, 100,
+        600, 250
+    )
     -- Fim
 
     -- Exercício 2.c    
@@ -114,28 +126,5 @@ function love.draw()
         500, 
         50
     )
-    -- Fim
-
-    -- Exercício 2.e
-    love.graphics.circle(
-        'line',
-        650,
-        550,
-        50
-    )
-    love.graphics.line(
-        love.math.newBezierCurve(
-            600,500,
-            625,475, 
-            650,450, 
-            675,425, 
-            700,450, 
-            725,475,
-            750,500           
-        ):render()
-    )
-    -- Fim
-
-    -- Exercício 2.f
-    -- Fim
+    -- Fim    
 end
