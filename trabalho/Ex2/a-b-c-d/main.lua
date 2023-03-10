@@ -102,8 +102,10 @@ function love.draw()
     )
     love.graphics.line(
         love.math.newBezierCurve(
-            850, 200,            
-            925, 250,            
+            850, 200,
+            900, 200,            
+            925, 250,
+            900, 300,            
             850, 300            
         ):render()
     )    
