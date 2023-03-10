@@ -22,5 +22,23 @@ function love.draw()
         300,
         175,
         25
+    )    
+    love.graphics.line(
+        love.math.newBezierCurve(
+            300, 100,
+            325, 100,
+            335, 125,
+            325, 150,
+            300, 150            
+        ):render()
+    )
+    love.graphics.line(
+        love.math.newBezierCurve(
+            100, 150,
+            75, 150,
+            65, 175,
+            75, 200,
+            100, 200            
+        ):render()
     )
 end
