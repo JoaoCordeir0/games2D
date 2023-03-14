@@ -19,7 +19,7 @@ function love.draw()
       400, 0,
       400, 600
   )
-  love.graphics.line(
+  lineDashed(
       0, 300,
       800, 300
   )

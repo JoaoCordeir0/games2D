@@ -51,3 +51,54 @@ function lineDoted(x1, y1, x2, y2)
     dy = dy + py + vy
   end
 end
+
+-- Função que faz uma linha tracejada
+function lineDashed(x1, y1, x2, y2)
+  local trace = 10
+  local jump = 10
+  local verify = math.abs(y2 - y1) > math.abs(x2 - x1)
+  
+  if verify then
+    x1, y1 = y1, x1
+    x2, y2 = y2, x2  
+  end
+  
+  if x1 > x2 then
+    x1, x2 = x2, x1
+    y1, y2 = y2, y1
+  end
+  
+  local dx, dy = (x2 - x1), math.abs(y2 - y1)
+  local erro = dx / 2
+  
+  local py = (y1 < y2) and 1 or -1
+  local y = y1
+  local maxX = x2
+  local pxCount = 0
+  local eTrace = true
+  local lastA, lastB, A, B
+  
+  for x = x1, maxX do 
+    pxCount = pxCount + 1
+    
+    if (eTrace and pxCount == trace) or (not eTrace and pxCount == jump) then
+      pxCount = 0
+      eTrace = not eTrace
+      A = verify and y or x
+      B = verify and x or y
+      if lastA then
+        love.graphics.line(lastA, lastB, A, B)
+        lastA = nil
+        lastB = nil
+      else
+        lastA = A
+        lastB = B
+      end
+    end
+    erro = erro - dy
+    if erro < 0 then
+      y = y + py
+      erro = erro + dx
+    end
+  end
+end
