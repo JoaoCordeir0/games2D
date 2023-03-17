@@ -43,6 +43,16 @@ function love.update(dt)
     newShot = {x = X, y = Y, ang = angle}
     table.insert(shots, newShot)
   end
+  -- Movimentação do disparador na horizontal
+  if love.keyboard.isDown('d') then
+    posShot.x = posShot.x + 50 * dt
+  elseif love.keyboard.isDown('a') then
+    posShot.x = posShot.x - 50 * dt
+  elseif love.keyboard.isDown('s') then
+    posShot.y = posShot.y + 50 * dt
+  elseif love.keyboard.isDown('w') then
+    posShot.y = posShot.y - 50 * dt
+  end
   
   -- Animação dos disparos 
   for i, actual in pairs(shots) do
