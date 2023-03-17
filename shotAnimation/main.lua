@@ -45,13 +45,14 @@ function love.update(dt)
   end
   -- Movimentação do disparador na horizontal
   if love.keyboard.isDown('d') then
-    posShot.x = posShot.x + 50 * dt
+    posShot.x = posShot.x + 300 * dt
   elseif love.keyboard.isDown('a') then
-    posShot.x = posShot.x - 50 * dt
-  elseif love.keyboard.isDown('s') then
-    posShot.y = posShot.y + 50 * dt
+    posShot.x = posShot.x - 300 * dt
+  end 
+  if love.keyboard.isDown('s') then
+    posShot.y = posShot.y + 300 * dt
   elseif love.keyboard.isDown('w') then
-    posShot.y = posShot.y - 50 * dt
+    posShot.y = posShot.y - 300 * dt
   end
   
   -- Animação dos disparos 
