@@ -17,7 +17,7 @@ end
 function love.draw()
     -- Instruções na tecla
     LG.print("Teclas de controle: [S]alvar, [C]arregar e [R]einiciar", 5, 5)
-    love.graphics.printf("Current FPS: " .. tostring(love.timer.getFPS( )), 5, 5, love.graphics.getWidth() - 10, "right")
+    LG.printf("Current FPS: " .. tostring(love.timer.getFPS( )), 5, 5, LG.getWidth() - 10, "right")
     
     LG.draw(
         character.img,
