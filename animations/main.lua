@@ -1,4 +1,4 @@
-# Básico de animação
+-- Básico de animação
 
 -- Variáveis globais
 posX = 0
